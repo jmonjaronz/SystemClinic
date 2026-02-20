@@ -11,24 +11,26 @@ export default function Hero() {
             <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     <div className="lg:w-1/2 text-center lg:text-left">
-                        <div className="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">
-                            Bienvenido a Montero & Company
+                        <div className="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-blue-900 uppercase bg-blue-50 rounded-full">
+                            Bienvenido a Montero and Company
                         </div>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 mb-6 leading-tight">
                             Tu bienestar mental es <br />
-                            <span className="text-blue-800">nuestra prioridad absoluta.</span>
+                            <span className="text-blue-900">nuestra prioridad absoluta.</span>
                         </h1>
                         <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                             Ofrecemos terapia psicológica profesional, ética y empática.
                             Nuestro equipo está listo para acompañarte en tu camino hacia una salud mental plena y duradera.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <Button size="lg" className="bg-blue-800 hover:bg-blue-900 text-white font-bold px-8 h-14 text-lg shadow-lg shadow-blue-200 transition-all hover:-translate-y-1">
-                                Agendar tu primera cita
-                            </Button>
-                            <Link to="/servicios">
-                                <Button size="lg" variant="outline" className="text-blue-800 border-blue-800 hover:bg-blue-50 font-bold px-8 h-14 text-lg">
-                                    Conocer Nuestros Servicios
+                            <Link to="/paciente/login">
+                                <Button size="lg" className="bg-blue-900 hover:bg-blue-800 text-white font-bold px-8 h-14 text-lg shadow-lg shadow-blue-200 transition-all hover:-translate-y-1 w-full sm:w-auto">
+                                    Agendar cita personal
+                                </Button>
+                            </Link>
+                            <Link to="/empresa/login">
+                                <Button size="lg" className="bg-indigo-700 hover:bg-indigo-600 text-white font-bold px-8 h-14 text-lg shadow-lg shadow-blue-200 transition-all hover:-translate-y-1 w-full sm:w-auto">
+                                    Soluciones Empresas
                                 </Button>
                             </Link>
                         </div>

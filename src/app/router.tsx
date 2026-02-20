@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import PublicLayout from "@/shared/layouts/PublicLayout";
 import HomePage from "@/modules/public/pages/HomePage";
 import ServicesPage from "@/modules/public/pages/ServicesPage";
+import PersonalServicesPage from "@/modules/public/pages/PersonalServicesPage";
+import CorporateServicesPage from "@/modules/public/pages/CorporateServicesPage";
 import ContactPage from "@/modules/public/pages/ContactPage";
 import TeamPage from "@/modules/public/pages/TeamPage";
 
@@ -16,6 +18,7 @@ import LoginPage from "@/modules/admin/auth/pages/LoginPage";
 
 // Patient Imports
 import PatientLoginPage from "@/modules/patient/auth/pages/PatientLoginPage";
+import PatientRegisterPage from "@/modules/patient/auth/pages/PatientRegisterPage";
 import PatientDashboardLayout from "@/modules/patient/dashboard/layouts/PatientDashboardLayout";
 import PatientHome from "@/modules/patient/dashboard/pages/PatientHome";
 import BookingWizard from "@/modules/patient/dashboard/pages/BookingWizard";
@@ -39,6 +42,10 @@ export const router = createBrowserRouter([
         element: <PatientLoginPage />,
     },
     {
+        path: "/paciente/registro",
+        element: <PatientRegisterPage />,
+    },
+    {
         path: "/empresa/login",
         element: <CorporateLoginPage />,
     },
@@ -53,6 +60,14 @@ export const router = createBrowserRouter([
             {
                 path: "servicios",
                 element: <ServicesPage />,
+            },
+            {
+                path: "servicios/bienestar-personal",
+                element: <PersonalServicesPage />,
+            },
+            {
+                path: "servicios/soluciones-corporativas",
+                element: <CorporateServicesPage />,
             },
             {
                 path: "contacto",
