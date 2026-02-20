@@ -4,6 +4,7 @@ import BenefitsSection from "../components/BenefitsSection";
 import SpecialistsSection from "../components/SpecialistsSection";
 import ProcessSection from "../components/ProcessSection";
 import ServicesTabSection from "../components/ServicesTabSection";
+import TrustSection from "../components/TrustSection";
 
 export default function HomePage() {
     return (
@@ -11,6 +12,7 @@ export default function HomePage() {
             <Hero />
             <BenefitsSection />
             <ServicesTabSection />
+            <TrustSection />
             <SpecialistsSection />
             <ProcessSection />
             <ContactSection />
